@@ -1,0 +1,488 @@
+/* Starting Format */
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+@font-face {
+    font-family: "Heavitas";
+    src: url('../Fonts/Heavitas.ttf');
+}
+
+@font-face {
+    font-family: "Revamped";
+    src: url('../Fonts/Revamped.otf');
+}
+html{
+    scroll-behavior: smooth;
+}
+:root {
+    --main-for-color: white;
+    --sub-main-color: black;
+    --main-background: #0C0C0C;
+    --section-background: #e41a2b;
+    --sub-background: white;
+    --basic-font: Arial;
+    --main-font: "Heavitas";
+    --sub-font: "Revamped";
+    --main-font-size: 22px;
+    --sub-font-size: 19px;
+}
+
+/* Starting Format */
+/*Format Header*/
+.bigContainer header {
+    background-color: white;
+    min-height: 700px;
+    background-image: url('../Images/slider-bg.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-color: rgba(12, 12, 12, 0.6);
+    background-blend-mode: overlay;
+}
+
+.bigContainer header div div ul li.nav-item {
+    padding-left: 20px;
+}
+
+.bigContainer header .firstDiv,
+.bigContainer header .secondDiv {
+    color: white;
+    text-align: center;
+}
+
+.bigContainer header .firstDiv {
+    margin-top: 10%;
+    letter-spacing: 4px;
+    font-weight: bolder;
+    font-size: 30px;
+    font-family: var(--main-font);
+}
+
+.bigContainer header .secondDiv {
+    margin-top: 2%;
+    letter-spacing: 2px;
+    font-family: var(--sub-font);
+    line-height: 2;
+    text-align: center;
+}
+
+.bigContainer header div.container div.first,
+.bigContainer header div.container div.second {
+    margin-top: 3%;
+}
+
+.bigContainer header div.container select {
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.bigContainer header div.container .btn-submit {
+    width: 100%;
+    font-weight: bold;
+    font-family: var(--sub-font);
+    transition: background-color 0.5s linear;
+}
+
+.bigContainer header div.container .btn-submit:hover {
+    background-color: transparent;
+    border: 1px solid yellow;
+}
+
+.bigContainer header div.container div.second {
+    color: white;
+    width: 50%;
+    margin: 3% auto;
+    font-weight: bolder;
+    font-size: 22px;
+}
+
+.bigContainer header div.container div.second .form-check label,
+.bigContainer header div.container div.second .form-check input {
+    cursor: pointer;
+}
+
+.bigContainer header div.container div.second .form-check:hover {
+    color: red;
+}
+.active{
+    color: yellow !important;
+}
+/*Responsive Header*/
+@media (max-width:2560px) {
+    .navbar-nav {
+        margin-left: 73%;
+    }
+}
+
+@media (max-width:1440px) {
+    .navbar-nav {
+        margin-left: 50%;
+    }
+}
+
+@media (max-width:1024px) {
+    .navbar-nav {
+        margin-left: 32%;
+    }
+
+    .bigContainer header div.container div.second {
+        width: 70%;
+    }
+}
+
+@media (max-width:768px) {
+    .bigContainer header div.container div.second {
+        width: 90%;
+    }
+}
+
+@media (max-width:425px) {
+    .bigContainer header div.secondDiv {
+        padding: 20px;
+    }
+
+    .bigContainer header div.secondDiv {
+        text-align: justify;
+    }
+
+    .bigContainer header div.first div {
+        margin-top: 4%;
+    }
+}
+
+/*Responsive Header*/
+/*Format Header*/
+/*Format Section*/
+
+/*Recent Feature Jobs Article*/
+.bigContainer section article.recent-feature-jobs{
+    background: #08135c;
+    padding: 50px;
+    color: white;
+}
+.bigContainer section article.recent-feature-jobs h2{
+    margin: 0px auto;
+    width: 50%;
+    text-align: center;
+    font-family: var(--main-font);
+}
+.bigContainer section article.recent-feature-jobs h3{
+    padding-top: 50px;
+    text-align: left;
+    font-family: var(--sub-font);
+    padding-left: 60px;
+}
+.bigContainer section article.recent-feature-jobs div.container div.row .bordering-recent-feature{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    border: 2px solid white;
+    border-radius: 15px;
+    margin-bottom: 2%;
+    padding: 20px;
+    font-family: var(--sub-font);
+}
+.bigContainer section article.recent-feature-jobs div.container div.row .bordering-recent-feature img{
+    width: 120px;
+    height: 120px;
+}
+.bigContainer section article.recent-feature-jobs div.container div.row .bordering-recent-feature .floating{
+   position: absolute;
+   bottom: 10px;
+   right: 25px;
+}
+.bigContainer section article.recent-feature-jobs div.container div.row .bordering-recent-feature .floating i{
+    font-size: 30px;
+    margin-right: 30px;
+    position: absolute;
+    top: 7px;
+    right: 120px;
+}
+.bigContainer section article.recent-feature-jobs div.container div.row .bordering-recent-feature .floating .btn-float{
+    transition: all 0.5s linear;
+}
+.bigContainer section article.recent-feature-jobs div.container div.row .bordering-recent-feature .floating .btn-float:hover{
+    background-color: transparent;
+    border: 1px solid red;
+}
+.bigContainer section article.recent-feature-jobs div.container div.row .bordering-recent-feature h5{
+    font-size: 17px;
+}
+a.view-all{
+    display: block;
+    width: 15%;
+    margin: 1% auto;
+    transition: all 0.5s linear;
+    padding: 5px 10px;
+}
+a.view-all:hover{
+    background-color: transparent;
+    border: 1px solid red;
+}
+/*Reponsive Recent Feature Jobs Article*/
+@media (max-width:2560px){
+    .bigContainer section article.recent-feature-jobs h3{
+        padding-left: 580px;
+    }
+    .bigContainer section article.recent-feature-jobs div.container div.row .bordering-recent-feature.left{
+        width: 48%;
+        margin-right: 2%;
+    }
+    .bigContainer section article.recent-feature-jobs div.container div.row .bordering-recent-feature.right{
+        width: 48%;
+        margin-left: 2%;
+    }
+}
+@media (max-width:1440px){
+    .bigContainer section article.recent-feature-jobs h3{
+        padding-left: 60px;
+    }
+}
+@media (max-width:1024px){
+    .bigContainer section article.recent-feature-jobs h3{
+        padding-left: 20px;
+    }
+    .bigContainer section article.recent-feature-jobs div.container div.row .bordering-recent-feature h4{
+        font-size: 18px;
+    }
+    .bigContainer section article.recent-feature-jobs div.container div.row .bordering-recent-feature h5{
+        font-size: 17px;
+    }
+    .bigContainer section article.recent-feature-jobs div.container div.row .bordering-recent-feature img{
+        margin-right: 10px;
+    }
+}
+@media (max-width:768px){
+    .bigContainer section article.recent-feature-jobs div.container div.row .bordering-recent-feature.left{
+        width: 100%;
+        margin: 0px;
+        margin-top: 5%;
+    }
+    .bigContainer section article.recent-feature-jobs div.container div.row .bordering-recent-feature.right{
+        width: 100%;
+        margin: 0px;
+        margin-top: 5%;
+    }
+    .bigContainer section article.recent-feature-jobs div.container div.row .bordering-recent-feature .floating{
+        right: 40px;
+     }
+     .bigContainer section article.recent-feature-jobs div.container div.row .bordering-recent-feature h4{
+        font-size: 22px;
+    }
+    .bigContainer section article.recent-feature-jobs div.container div.row .bordering-recent-feature h5{
+        font-size: 20px;
+    }
+    a.view-all{
+        width: 30%;
+        margin-top: 20px;
+    }
+    .bigContainer section article.recent-feature-jobs h2{
+        width: 100%;
+    }
+}
+@media (max-width:425px){
+    .bigContainer section article.recent-feature-jobs div.container div.row .bordering-recent-feature .floating{
+        right: 20px;
+     }
+     .bigContainer section article.recent-feature-jobs h2{
+        width: 100%;
+    }
+    .bigContainer section article.recent-feature-jobs div.container div.row .bordering-recent-feature h4{
+        font-size: 12px;
+    }
+    .bigContainer section article.recent-feature-jobs div.container div.row .bordering-recent-feature h5{
+        font-size: 12px;
+    }
+    .bigContainer section article.recent-feature-jobs div.container div.row .bordering-recent-feature img{
+        width: 80px;
+        height: 80px;
+        margin-right: 5px;
+    }
+    a.view-all{
+        margin-top: 20px;
+        width: 100%;
+    }
+}
+@media (max-width:375px){
+    .bigContainer section article.recent-feature-jobs div.container div.row .bordering-recent-feature .floating{
+        right: 10px;
+     }
+     .bigContainer section article.recent-feature-jobs h2{
+        font-size: 20px;
+    }
+    .bigContainer section article.recent-feature-jobs h3{
+        font-size: 15px;
+    }
+    .bigContainer section article.recent-feature-jobs div.container div.row .bordering-recent-feature h4{
+        font-size: 12px;
+    }
+    .bigContainer section article.recent-feature-jobs div.container div.row .bordering-recent-feature h5{
+        font-size: 10px;
+    }
+    .bigContainer section article.recent-feature-jobs div.container div.row .bordering-recent-feature img{
+        width: 50px;
+        height:50px;
+        margin-right: 5px;
+        margin-top: 10px;
+    }
+    .bigContainer section article.recent-feature-jobs div.container div.row .bordering-recent-feature .floating i{
+        font-size: 20px;
+        margin-right: 5px;
+    }
+    .bigContainer section article.recent-feature-jobs div.container div.row .bordering-recent-feature .floating .btn-float{
+        padding: 2px 5px;
+    }
+    .bigContainer section article.recent-feature-jobs div.container div.row .bordering-recent-feature .floating{
+        bottom: 5px;
+     }
+}
+@media (max-width:320px){
+     .bigContainer section article.recent-feature-jobs h2{
+        font-size: 17px;
+    }
+    .bigContainer section article.recent-feature-jobs h3{
+        font-size: 14px;
+    }
+    .bigContainer section article.recent-feature-jobs div.container div.row .bordering-recent-feature h4{
+        font-size: 11px;
+    }
+    .bigContainer section article.recent-feature-jobs div.container div.row .bordering-recent-feature h5{
+        font-size: 9px;
+    }
+    
+    .bigContainer section article.recent-feature-jobs div.container div.row .bordering-recent-feature .floating i{
+        font-size: 15px;
+    }
+    .bigContainer section article.recent-feature-jobs div.container div.row .bordering-recent-feature .floating .btn-float{
+        padding: 2px 5px;
+        font-size: 12px;
+    }
+    .bigContainer section article.recent-feature-jobs div.container div.row .bordering-recent-feature .floating{
+        bottom: 3px;
+     }
+}
+/*Reponsive Recent Feature Jobs Article*/
+/*Recent Feature Jobs Article*/
+/*Format Section*/
+/*Footer Section*/
+.bigContainer footer{
+    background-color: #08135c;
+    color: white;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.bigContainer footer div h2{
+    text-align: left;
+    font-family: var(--sub-font);
+    font-size: 30px;
+}
+.bigContainer footer div ul{
+    list-style-type: square;
+}
+.bigContainer footer div ul a{
+    text-decoration: none;
+    color: white;
+}
+.bigContainer footer div ul a li{
+    transition: all 0.3s linear;
+}
+.bigContainer footer div ul a li.cheacked{
+    color: red;
+}
+.bigContainer footer div ul a li:hover{
+    color: red;
+}
+.bigContainer footer div p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    font-size: 17px;
+}
+.bigContainer footer div div.row{
+    margin-top: 50px;
+}
+.bigContainer footer div div.row div div.icons{
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: blue;
+    transition: all 0.2s ease-in-out;
+}
+.bigContainer footer div div.row div div.icons:hover {
+    color: red;
+}
+.bigContainer footer div div.row div div.icons i{
+    margin-left: 15px;
+    margin-top: 15px;
+    font-size: 20px;
+}
+.bigContainer footer div div.row div div.icons i.one{
+    margin-left: 18px;
+}
+.bigContainer footer a.btn-last-btn{
+    width: 100%;
+    transition: all 0.3s linear;
+}
+.bigContainer footer a.btn-last-btn:hover{
+    background-color: transparent;
+    border: 1px solid yellow;
+    color: yellow;
+}
+.bigContainer footer hr{
+    margin-top: -30px;
+    color: white;
+}
+.bigContainer footer div.container div.row p.last-p{
+    text-align: center;
+    font-family: var(--sub-font);
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    font-size: 30px;
+}
+/*Responsive Footer Section*/
+@media (max-width:1024px){
+    .bigContainer footer{
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+.bigContainer footer div h2{
+    font-size: 25px;
+}
+}
+@media (max-width:768px){
+    .bigContainer footer{
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+.bigContainer footer div{
+    margin-bottom: 20px;
+}
+}
+@media (max-width:425px){
+    .bigContainer footer div ul{
+    padding-left: 50px;
+}
+.bigContainer footer div.container div.row p.last-p{
+    font-size: 20px;
+}
+}
+@media (max-width:375px){
+.bigContainer footer div.container div.row p.last-p{
+    font-size: 18px;
+}
+}
+@media (max-width:320px){
+.bigContainer footer div.container div.row p.last-p{
+    font-size: 15px;
+}
+}
+/*Responsive Footer Section*/
+/*Footer Section*/

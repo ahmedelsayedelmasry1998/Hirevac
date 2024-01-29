@@ -1,0 +1,343 @@
+/* Starting Format */
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+@font-face {
+    font-family: "Heavitas";
+    src: url('../Fonts/Heavitas.ttf');
+}
+
+@font-face {
+    font-family: "Revamped";
+    src: url('../Fonts/Revamped.otf');
+}
+html{
+    scroll-behavior: smooth;
+}
+:root {
+    --main-for-color: white;
+    --sub-main-color: black;
+    --main-background: #0C0C0C;
+    --section-background: #e41a2b;
+    --sub-background: white;
+    --basic-font: Arial;
+    --main-font: "Heavitas";
+    --sub-font: "Revamped";
+    --main-font-size: 22px;
+    --sub-font-size: 19px;
+}
+
+/* Starting Format */
+/*Format Header*/
+.bigContainer header {
+    background-color: white;
+    min-height: 700px;
+    background-image: url('../Images/slider-bg.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-color: rgba(12, 12, 12, 0.6);
+    background-blend-mode: overlay;
+}
+
+.bigContainer header div div ul li.nav-item {
+    padding-left: 20px;
+}
+
+.bigContainer header .firstDiv,
+.bigContainer header .secondDiv {
+    color: white;
+    text-align: center;
+}
+
+.bigContainer header .firstDiv {
+    margin-top: 10%;
+    letter-spacing: 4px;
+    font-weight: bolder;
+    font-size: 30px;
+    font-family: var(--main-font);
+}
+
+.bigContainer header .secondDiv {
+    margin-top: 2%;
+    letter-spacing: 2px;
+    font-family: var(--sub-font);
+    line-height: 2;
+    text-align: center;
+}
+
+.bigContainer header div.container div.first,
+.bigContainer header div.container div.second {
+    margin-top: 3%;
+}
+
+.bigContainer header div.container select {
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.bigContainer header div.container .btn-submit {
+    width: 100%;
+    font-weight: bold;
+    font-family: var(--sub-font);
+    transition: background-color 0.5s linear;
+}
+
+.bigContainer header div.container .btn-submit:hover {
+    background-color: transparent;
+    border: 1px solid yellow;
+}
+
+.bigContainer header div.container div.second {
+    color: white;
+    width: 50%;
+    margin: 3% auto;
+    font-weight: bolder;
+    font-size: 22px;
+}
+
+.bigContainer header div.container div.second .form-check label,
+.bigContainer header div.container div.second .form-check input {
+    cursor: pointer;
+}
+
+.bigContainer header div.container div.second .form-check:hover {
+    color: red;
+}
+.active{
+    color: yellow !important;
+}
+/*Responsive Header*/
+@media (max-width:2560px) {
+    .navbar-nav {
+        margin-left: 73%;
+    }
+}
+
+@media (max-width:1440px) {
+    .navbar-nav {
+        margin-left: 50%;
+    }
+}
+
+@media (max-width:1024px) {
+    .navbar-nav {
+        margin-left: 32%;
+    }
+
+    .bigContainer header div.container div.second {
+        width: 70%;
+    }
+}
+
+@media (max-width:768px) {
+    .bigContainer header div.container div.second {
+        width: 90%;
+    }
+}
+
+@media (max-width:425px) {
+    .bigContainer header div.secondDiv {
+        padding: 20px;
+    }
+
+    .bigContainer header div.secondDiv {
+        text-align: justify;
+    }
+
+    .bigContainer header div.first div {
+        margin-top: 4%;
+    }
+}
+
+/*Responsive Header*/
+/*Format Header*/
+/*Format Section*/
+/*About Article*/
+.bigContainer section article.about {
+    padding: 50px;
+    font-family: var(--main-font);
+}
+
+.bigContainer section article.about div.row div p {
+    font-family: var(--sub-font);
+    text-align: justify;
+    line-height: 2;
+    padding-right: 20px;
+}
+
+.bigContainer section article.about div.row div img {
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 2px blue,
+        -2px -2px 2px 2px blue;
+    cursor: pointer;
+    transition: rotateY 0.2s ease-in-out;
+    width: 98%;
+    height: 100%;
+}
+
+.bigContainer section article.about div.row div img:hover {
+    transform: rotateY(180deg);
+}
+
+.bigContainer section article.about div.row div .btn-about {
+    padding: 8px 20px 8px 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+.bigContainer section article.about div.row div .btn-about:hover {
+    background-color: transparent;
+    border: 1px solid blue;
+    color: black;
+}
+/*Responsive About Article*/
+@media (max-width:768px){
+    .bigContainer section article.about div.row div:nth-child(2){
+        margin-top: 5%;
+    }
+}
+@media (max-width:425px){
+    .bigContainer section article.about div.row div:nth-child(1) p{
+        font-size: 13px;
+    }
+    .bigContainer section article.about div.row div .btn-about {
+        width: 100%;
+    }
+    .bigContainer section article.about div.row div img {
+        height: 310px;
+        background-size: cover;
+    }
+}
+@media (max-width:320px){
+    .bigContainer section article.about div.row div:nth-child(1) p{
+        font-size: 10px;
+    }
+    .bigContainer section article.about div.row div .btn-about {
+        width: 100%;
+    }
+}
+/*Responsive About Article*/
+/*About Article*/
+/*Format Section*/
+/*Footer Section*/
+.bigContainer footer{
+    background-color: #08135c;
+    color: white;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.bigContainer footer div h2{
+    text-align: left;
+    font-family: var(--sub-font);
+    font-size: 30px;
+}
+.bigContainer footer div ul{
+    list-style-type: square;
+}
+.bigContainer footer div ul a{
+    text-decoration: none;
+    color: white;
+}
+.bigContainer footer div ul a li{
+    transition: all 0.3s linear;
+}
+.bigContainer footer div ul a li.cheacked{
+    color: red;
+}
+.bigContainer footer div ul a li:hover{
+    color: red;
+}
+.bigContainer footer div p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    font-size: 17px;
+}
+.bigContainer footer div div.row{
+    margin-top: 50px;
+}
+.bigContainer footer div div.row div div.icons{
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: blue;
+    transition: all 0.2s ease-in-out;
+}
+.bigContainer footer div div.row div div.icons:hover {
+    color: red;
+}
+.bigContainer footer div div.row div div.icons i{
+    margin-left: 15px;
+    margin-top: 15px;
+    font-size: 20px;
+}
+.bigContainer footer div div.row div div.icons i.one{
+    margin-left: 18px;
+}
+.bigContainer footer a.btn-last-btn{
+    width: 100%;
+    transition: all 0.3s linear;
+}
+.bigContainer footer a.btn-last-btn:hover{
+    background-color: transparent;
+    border: 1px solid yellow;
+    color: yellow;
+}
+.bigContainer footer hr{
+    margin-top: -30px;
+    color: white;
+}
+.bigContainer footer div.container div.row p.last-p{
+    text-align: center;
+    font-family: var(--sub-font);
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    font-size: 30px;
+}
+/*Responsive Footer Section*/
+@media (max-width:1024px){
+    .bigContainer footer{
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+.bigContainer footer div h2{
+    font-size: 25px;
+}
+}
+@media (max-width:768px){
+    .bigContainer footer{
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+.bigContainer footer div{
+    margin-bottom: 20px;
+}
+}
+@media (max-width:425px){
+    .bigContainer footer div ul{
+    padding-left: 50px;
+}
+.bigContainer footer div.container div.row p.last-p{
+    font-size: 20px;
+}
+}
+@media (max-width:375px){
+.bigContainer footer div.container div.row p.last-p{
+    font-size: 18px;
+}
+}
+@media (max-width:320px){
+.bigContainer footer div.container div.row p.last-p{
+    font-size: 15px;
+}
+}
+/*Responsive Footer Section*/
+/*Footer Section*/
